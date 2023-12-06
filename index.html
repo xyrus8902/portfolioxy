@@ -446,6 +446,20 @@
       // Open the modal
       $('#projectModal').modal('show');
   }
+
+  // Function to handle form submission
+  function sendMessage() {
+      // Perform any necessary form validation here
+
+      // Show an alert for successful message submission
+      alert('Message successfully sent!');
+  }
+
+  // Attach the function to the form's submit event
+  document.querySelector('form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+      sendMessage(); // Call the custom function to handle the submission
+  });
 </script>
 
 
